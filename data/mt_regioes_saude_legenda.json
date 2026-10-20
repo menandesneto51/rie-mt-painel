@@ -1,0 +1,68 @@
+{
+  "regioes": [
+    {
+      "nome": "Alto Tapajós",
+      "cor": "#ff6f00"
+    },
+    {
+      "nome": "Araguaia Xingu",
+      "cor": "#1b5e20"
+    },
+    {
+      "nome": "Baixada Cuiabana",
+      "cor": "#0b3d91"
+    },
+    {
+      "nome": "Centro Norte Mato-grossense",
+      "cor": "#827717"
+    },
+    {
+      "nome": "Garças Araguaia",
+      "cor": "#d50000"
+    },
+    {
+      "nome": "Médio Araguaia",
+      "cor": "#00a651"
+    },
+    {
+      "nome": "Médio Norte Mato-grossense",
+      "cor": "#006064"
+    },
+    {
+      "nome": "Noroeste Mato-grossense",
+      "cor": "#311b92"
+    },
+    {
+      "nome": "Norte Araguaia Karajá",
+      "cor": "#bf360c"
+    },
+    {
+      "nome": "Norte Mato-grossense",
+      "cor": "#00bcd4"
+    },
+    {
+      "nome": "Oeste Mato-grossense",
+      "cor": "#aa00ff"
+    },
+    {
+      "nome": "Sudoeste Mato-grossense",
+      "cor": "#4a148c"
+    },
+    {
+      "nome": "Sul Mato-grossense",
+      "cor": "#01579b"
+    },
+    {
+      "nome": "Teles Pires",
+      "cor": "#e65100"
+    },
+    {
+      "nome": "Vale do Arinos",
+      "cor": "#f50057"
+    },
+    {
+      "nome": "Vale do Peixoto",
+      "cor": "#ffd600"
+    }
+  ]
+}
