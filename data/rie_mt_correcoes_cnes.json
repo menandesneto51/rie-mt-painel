@@ -1,0 +1,30 @@
+{
+  "gerado_em": "2026-10-20T21:01:26.112532+00:00",
+  "correcoes": [
+    {
+      "modalidade": "CRIE",
+      "cnes_resolucao": "24739054",
+      "cnes_corrigido": "2473054",
+      "nome_cnes": "CERMAC CENTRO ESTADUAL DE REF DE MEDIA E ALTA COMPLEXIDAD",
+      "motivo": "CNES da resolução não existe na API MS; CERMAC oficial é 2473054",
+      "latitude": "-15.605594909804198",
+      "longitude": "-56.1002254486084"
+    },
+    {
+      "modalidade": "CIIE",
+      "cnes_resolucao": "5644041",
+      "cnes_corrigido": "5654041",
+      "nome_cnes": "SECRETARIA MUNICIPAL DE SAUDE NOVA OLIMPIA",
+      "motivo": "Provável erro de digitação na resolução (5644041→5654041 SMS Nova Olímpia)",
+      "latitude": "-14.782351722950468",
+      "longitude": "-57.29124963283539"
+    }
+  ],
+  "geojson_n": 128,
+  "contagens": {
+    "CRIE": 1,
+    "CIIE": 33,
+    "POLO_NIRSEVIMABE": 30,
+    "SALA_VACINA": 64
+  }
+}

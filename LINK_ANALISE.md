@@ -1,14 +1,19 @@
-# Link externo — análise RIE-MT
+# Link de acesso ao painel RIE-MT
 
-Pasta `public/` pronta para publicação estática do mapa.
+## URL permanente (GitHub Pages)
+https://menandesneto51.github.io/rie-mt-painel/
 
-## Local
-http://127.0.0.1:8766/
+Repositório público do painel: https://github.com/menandesneto51/rie-mt-painel  
+Código completo (privado): https://github.com/menandesneto51/rie-mt-imunobiologicos-especiais  
+Issue de auditoria: https://github.com/menandesneto51/rie-mt-painel/issues/1
 
-## Túnel externo (temporário — sessão atual)
-https://now-about-racial-broadcast.trycloudflare.com
+## Local (desenvolvimento)
+```powershell
+python -m http.server 8766 --directory public
+```
+Abrir: http://127.0.0.1:8766/
 
-Ativo enquanto o servidor local (`python -m http.server 8766 --directory public`) e o `cloudflared` estiverem rodando.
-
-## Publicação permanente (opcional)
-Hospedar o conteúdo de `public/` em GitHub Pages, Vercel ou servidor SES-MT.
+## Reconciliação cadastral (v1.1)
+- Cadastro: 128 | Mapa: 128
+- CRIE: CNES resolução `24739054` → oficial CERMAC `2473054`
+- CIIE Nova Olímpia: `5644041` → `5654041`

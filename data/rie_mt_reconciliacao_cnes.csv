@@ -1,0 +1,3 @@
+cnes_resolucao;cnes_mapa;modalidade;situacao;motivo;nome_cnes;qualidade_geocodificacao;fonte
+24739054;2473054;CRIE;CORRIGIDO;CNES da resolução inexistente na API MS; CERMAC oficial 2473054;CERMAC CENTRO ESTADUAL DE REF DE MEDIA E ALTA COMPLEXIDAD;CNES_COORD_CORRIGIDO;API Dados Abertos MS / CNES DATASUS
+5644041;5654041;CIIE;CORRIGIDO;Provável erro de digitação na resolução (5644041→5654041);SECRETARIA MUNICIPAL DE SAUDE NOVA OLIMPIA;CNES_COORD_CORRIGIDO;API Dados Abertos MS municipio 510623
