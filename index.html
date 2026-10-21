@@ -184,8 +184,8 @@
     <div class="brand">Governo de Mato Grosso · Secretaria de Estado de Saúde</div>
     <h1>Rede de Imunobiológicos Especiais — RIE-MT</h1>
     <p>
-      Rede pactuada (CIB/MT nº 565/2026). ERS = coordenação regional (sede municipal provisória).
-      Coordenadas CNES com indicador de qualidade — não usar centroide como posição real.
+      Rede pactuada (CIB/MT nº 565/2026). ERS = coordenação regional (endereços oficiais SES-MT).
+      Coordenadas com indicador de qualidade — não apresentar centroide como posição exata.
     </p>
     <div class="version" id="hdr-version">Versão e bases: carregando…</div>
   </header>
@@ -194,7 +194,7 @@
       <h2>Cobertura da rede</h2>
       <div class="kpis">
         <div class="kpi ok"><b id="kpi-mapa">—</b><span>No mapa / cadastradas</span></div>
-        <div class="kpi"><b id="kpi-ers">16</b><span>ERS (sede provisória)</span></div>
+        <div class="kpi"><b id="kpi-ers">16</b><span>ERS com endereço SES-MT</span></div>
         <div class="kpi"><b id="kpi-crie">—</b><span>CRIE</span></div>
         <div class="kpi"><b id="kpi-ciie">—</b><span>CIIE</span></div>
         <div class="kpi"><b id="kpi-nirse">—</b><span>Polos nirsevimabe</span></div>
@@ -223,7 +223,7 @@
       <label class="layer"><input type="checkbox" data-layer="SALA_VACINA" checked /><span class="dot sala"></span> Sala de vacinação</label>
 
       <h2>Coordenação</h2>
-      <label class="layer"><input type="checkbox" id="ly-ers" checked /><span class="dot ers"></span> ERS (sede provisória)</label>
+      <label class="layer"><input type="checkbox" id="ly-ers" checked /><span class="dot ers"></span> ERS (endereço SES-MT)</label>
 
       <label class="search" for="q">Busca CNES / nome</label>
       <input id="q" type="search" placeholder="Ex.: 2473054 ou CERMAC" />
@@ -372,11 +372,14 @@
       m.bindPopup(
         `<strong>${esc(p.nome)}</strong><br>` +
         `Sede: ${esc(p.municipio_sede)}<br>` +
+        `Endereço: ${esc(p.endereco || "—")}<br>` +
+        `Contato: ${esc(p.contato || "—")}<br>` +
         `Região de saúde: ${esc(p.regiao_saude)}<br>` +
         `Municípios: ${esc(p.n_municipios)}<br>` +
         `Função: ${esc(p.funcao)}<br>` +
         `<em>${esc(p.observacao)}</em><br>` +
-        `Qualidade: ${esc(p.qualidade_geocodificacao)}`
+        `Qualidade geo: ${esc(p.qualidade_geocodificacao)}` +
+        (p.url_fonte ? `<br><a href="${esc(p.url_fonte)}" target="_blank" rel="noopener">Fonte SES-MT</a>` : "")
       );
       const label = L.marker([lat, lon], {
         icon: L.divIcon({
@@ -511,7 +514,7 @@
         `<strong>${lastVisibleUnits.length}</strong> unidades · <strong>${nErs}</strong> ERS na visão<br>` +
         `Cadastro × mapa: <strong>${unitsMeta.n || unitFeatures.length}/${unitsMeta.n || unitFeatures.length}</strong><br>` +
         `Atualização das bases: ${esc(atualizado)}<br>` +
-        `ERS: sede municipal provisória (não é endereço do escritório)`;
+        `ERS: endereços SES-MT; geo via Nominatim quando disponível`;
 
       if (opts.zoom && !suppressZoom) zoomToSelection();
     }
